@@ -12,6 +12,8 @@ URL:		http://libburnia.pykix.org/
 BuildRequires:	libburn-devel >= 0.5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%undefine	__cxx
+
 %description
 libisofs is the library to pack up hard disk files and directories
 into a ISO 9660 disk image.
