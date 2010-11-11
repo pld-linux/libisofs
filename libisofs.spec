@@ -3,13 +3,15 @@ Summary(pl.UTF-8):	Biblioteka do pakowania plików i katalogów w obrazy ISO 966
 Name:		libisofs
 Version:	0.6.38
 Release:	1
-License:	GPL v2
+License:	GPL v2+
 Group:		Libraries
 Source0:	http://files.libburnia-project.org/releases/%{name}-%{version}.tar.gz
 # Source0-md5:	0f889cd766e71c07bccc36f17bcea811
 URL:		http://libburnia.pykix.org/
-# for isogrow demo
-BuildRequires:	libburn-devel >= 0.5.6
+BuildRequires:	acl-devel
+BuildRequires:	attr-devel
+BuildRequires:	libjte-devel
+BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %undefine	__cxx
@@ -27,6 +29,10 @@ Summary:	Header files for libisofs library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libisofs
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Requires:	acl-devel
+Requires:	attr-devel
+Requires:	libjte-devel
+Requires:	zlib-devel
 
 %description devel
 Header files for libisofs library.
