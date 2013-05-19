@@ -1,12 +1,12 @@
 Summary:	Library to pack up hard disk files and directories into a ISO 9660 disk image
 Summary(pl.UTF-8):	Biblioteka do pakowania plików i katalogów w obrazy ISO 9660
 Name:		libisofs
-Version:	1.2.8
+Version:	1.3.0
 Release:	1
 License:	GPL v2+
 Group:		Libraries
 Source0:	http://files.libburnia-project.org/releases/%{name}-%{version}.tar.gz
-# Source0-md5:	9d3515929b80a08daa6423b8312be8c1
+# Source0-md5:	5ab9f4a57d3c815d1183cbf49ce86a9e
 URL:		http://libburnia-project.org/
 BuildRequires:	acl-devel
 BuildRequires:	attr-devel
@@ -76,7 +76,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS COPYRIGHT NEWS README Roadmap TODO
+%doc AUTHORS COPYRIGHT ChangeLog NEWS README Roadmap TODO
 %attr(755,root,root) %{_libdir}/libisofs.so.*.*.*
 %attr(755,root,root) %ghost %{_libdir}/libisofs.so.6
 
