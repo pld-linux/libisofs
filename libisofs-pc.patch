@@ -1,0 +1,10 @@
+--- libisofs-1.5.8/libisofs-1.pc.in.orig	2026-07-04 12:00:54.146921684 +0200
++++ libisofs-1.5.8/libisofs-1.pc.in	2026-07-04 12:04:02.659233758 +0200
+@@ -7,5 +7,7 @@ Name: libisofs
+ Description: ISO9660 filesystem creation library
+ Version: @VERSION@
+ Requires: 
++Requires.private: libjte-2 zlib acl
+ Libs: -L${libdir} -lisofs
++Libs.private: @THREAD_LIBS@
+ Cflags: -I${includedir}/libisofs
