@@ -4,7 +4,7 @@
  Description: ISO9660 filesystem creation library
  Version: @VERSION@
  Requires: 
-+Requires.private: libjte-2 zlib acl
++Requires.private: libjte-2 zlib libacl
  Libs: -L${libdir} -lisofs
 +Libs.private: @THREAD_LIBS@
  Cflags: -I${includedir}/libisofs
